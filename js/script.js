@@ -28,7 +28,7 @@ function timeToRemember(){
             if(arrNum.includes(userNum)){
                 arrRightNum.push(userNum)
                 numOutput.classList.add('right-numbers')
-                numOutput.innerHTML=`Numeri indovinati = ${arrRightNum.length} <br> <br>Eccoli:<br>${arrRightNum}`
+                numOutput.innerHTML=`Numeri indovinati = ${arrRightNum.length} <br> <br>Eccoli:<br>${arrRightNum}.`
             }
         }
     }
