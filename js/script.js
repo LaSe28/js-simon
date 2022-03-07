@@ -15,7 +15,7 @@ while( arrNum.length < 5){
     numOutput.innerHTML= `Vediamo se riesci a ricordare questi numeri:<br> <br>${arrNum}`;
 }
 
-setTimeout (timeToRemember, 3000)
+setTimeout (timeToRemember, 30000)
 
 function timeToRemember(){
     numOutput.innerHTML = `Vediamo se ti ricordi`
