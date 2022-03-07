@@ -15,7 +15,7 @@ while( arrNum.length < 5){
     numOutput.innerHTML= `Vediamo se riesci a ricordare questi numeri:<br> <br>${arrNum}`;
 }
 
-setTimeout (timeToRemember, 30000)
+setTimeout (timeToRemember, 3000)
 
 function timeToRemember(){
     numOutput.innerHTML = `Vediamo se ti ricordi`
@@ -26,7 +26,9 @@ function timeToRemember(){
             let userNum = parseInt(prompt('Inserisci i numeri in ordine:'))
             arrUserNum.push(userNum)
             if(arrNum.includes(userNum)){
-                arrRightNum.push(userNum)
+                if(!arrRightNum.includes(userNum)){
+                    arrRightNum.push(userNum)
+                }
                 numOutput.classList.add('right-numbers')
                 numOutput.innerHTML=`Numeri indovinati = ${arrRightNum.length} <br> <br>Eccoli:<br>${arrRightNum}.`
             }
